@@ -1,0 +1,11 @@
+{% extends 'home.html' %}
+{% include 'snippets/nav.html' %}
+{% block container%}
+<h3>{{ object.name }}</h3>
+	<ul>
+		<li>Location : {{ object.location }}</li>
+		<li>Category : {{ object.category }}</li>
+		<li>Established In : {{ object.timestamp }}</li>
+		<li>Details Updated {{ object.updated|timesince }} ago</li>
+	</ul>
+{% endblock %}

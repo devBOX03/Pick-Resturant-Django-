@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{% include 'snippets/css.html' %}
+	{% include 'snippets/js.html' %}
+</head>
+<body>
+
+<div class="container">
+	{% include 'snippets/nav.html' %}
+	{% block container%}
+	<h3>THIS IS HOME</h3>
+	<p>This site provides user's favourite restaurants and details about them.</p>
+	{% endblock container %}
+</div>
+
+</body>
+</html>

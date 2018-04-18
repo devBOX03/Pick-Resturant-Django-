@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+{% include 'snippets/nav.html' %}
+{% block container%}
+	<a href="/create_resturant/">Add Resturant</a>
+	{% for obj in object_list %}
+	<ul>
+		<li><a href="/resturant_details/{{ obj.id }}">{{ obj.name }}</a></li>
+	</ul>
+	{% endfor %}
+{% endblock %}
